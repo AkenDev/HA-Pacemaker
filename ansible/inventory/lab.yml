@@ -1,0 +1,14 @@
+all:
+  children:
+    lab:
+      children:
+        cluster:
+          hosts:
+            ha01:
+            ha02:
+            ha03:
+
+        application_nodes:
+          hosts:
+            app01:
+            app02:

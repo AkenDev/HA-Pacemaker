@@ -1,0 +1,3 @@
+#Recomendation, ignore these files
+.vagrant/
+.ssh/
