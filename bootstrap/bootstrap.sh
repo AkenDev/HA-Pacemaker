@@ -115,7 +115,6 @@ configure_sudo() {
 
         if ! id -nG "${ANSIBLE_USER}" | grep -qw "${SUDO_GROUP}"; then
             log ERROR "Failed to add '${ANSIBLE_USER}' to '${SUDO_GROUP}'."
-            rm -f "${sudoers_tmp}"
             return 1
         fi
     else
